@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+<title>Menu</title>
+
+<style>
+body{/* to change font for menu page */
+    font-family: Georgia;
+    background:#ece7de;
+}
+
+/* section title */
+h1, h2{
+    font-size: 40px;
+    text-align: center;
+    color: #1f4d3a;
+}
+
+/* wrapper to place menus side by side */
+.menuWrapper{
+    display:flex;/* flexbox layout */
+    justify-content:center;/* center the menu cards */
+    gap:50px;/* space between menu cards */
+    flex-wrap:wrap; /* mobile friendly */
+}
+
+/* card container */
+.menuCard{
+    background:rgb(251, 251, 251); /*to change card background*/
+    width:500px;/* card width */
+    padding:100px;/* card padding */
+    border-radius:20px;/* card border radius */
+    box-shadow:0px 4px 10px rgb(80, 78, 78);/* card shadow  */
+}
+
+/* menu row */
+.row {
+    display:flex;/* flexbox layout for menu items */
+    justify-content:space-between;/* space between item name and price */
+    align-items:center;/* vertical alignment */
+    border-bottom:1px dotted #aba9a9;/* separator between menu items */
+    padding:10px;/* row padding , space between each dish */
+    animation:slideUp 0.8s;/* animation for menu items */
+}
+
+/* left side */
+.left{
+    display:flex;/* flexbox layout for thumbnail and name */
+    align-items:flex-start;/* align thumbnail to top of name */
+}
+
+/* food thumbnail */
+.left img{
+    width:50px;/* thumbnail width */
+    height:50px;/* thumbnail height */
+    border-radius:8px;/* thumbnail border radius */
+    margin-right:10px;/* space between thumbnail and name */
+}
+
+/* animation */
+@keyframes slideUp{ /* animation for menu items */
+    from{opacity:0; transform:translateY(20px);}/* start with opacity 0 and slightly below */
+     to{opacity:1; transform:translateY(0);}/* end with opacity 1 and original position */
+}
+
+button{/* button styling */
+    display:block;
+    margin:40px auto;
+
+    padding:15px 30px;   /* 👈 bigger button */
+    font-size:18px;     /* 👈 bigger text */
+
+    background:linear-gradient(135deg,#e64311,#d30707);
+    color:rgb(98, 55, 55);
+    border:none;
+    border-radius:30px;
+    font-weight:600;/* to make text bold */
+    letter-spacing:1px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(5, 5, 5, 0.25);
+    transition:all 0.3s ease;
+}
+button:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 12px 28px rgba(0,0,0,0.35);
+}
+.menu-buttons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+.menu-buttons a{
+    text-decoration:none;
+}
+.left span{
+    display:flex;
+    flex-direction:column;
+}
+.desc{
+    display:block;
+    font-size:14px;
+    font-weight:400;
+    color:#6b6b6b;
+    margin-top:6px;   /* 👈 increase this for more space */
+}
+</style>
+</head>
+
+<body>
+
+<div class="menuWrapper">
+    
+    <!-- LUNCH MENU -->
+    <div>
+        <h1>Lunch Menu</h1>
+        <div class="menuCard">
+
+            <div class="row">
+                <div class="left">
+                    <img src="thali.jpeg" alt="Veg Thali">
+                    <span>
+    Veg Thali
+    <small class="desc">A complete meal with rice, roti, curry, dal and sides.</small>
+</span>
+                </div>
+                <span>₹120</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="image/panner.jpeg" alt="Paneer Curry">
+                    <span>
+    Paneer Curry
+    <small class="desc">Soft paneer cubes cooked in rich Indian gravy.</small>
+</span>
+                </div>
+                <span>₹140</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="friedrice.jpeg" alt="Fried Rice">
+                    <span>
+    Fried Rice
+    <small class="desc">Stir-fried rice with fresh vegetables and light spices.</small>
+</span>
+                </div>
+                <span>₹110</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="daltadka.jpeg" alt="Dal Tadka">
+                    <span>
+    Dal Tadka
+    <small class="desc">Yellow lentils tempered with garlic and spices.</small>
+</span>
+                </div>
+                <span>₹100</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="chapatiset.jpeg" alt="Chapati Set">
+                    <span>
+    Chapati Set
+    <small class="desc">Soft wheat chapatis served fresh and hot.</small>
+</span>
+                </div>
+                <span>₹80</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="lemonrice.jpeg" alt="Lemon Rice">
+                    <span>
+    Lemon Rice
+    <small class="desc">South Indian style rice with lemon and peanuts.</small>
+</span>
+                </div>
+                <span>₹85</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- DINNER MENU -->
+    <div>
+        <h2>Dinner Menu</h2>
+        <div class="menuCard">
+
+            <div class="row">
+                <div class="left">
+                    <img src="butternaan.jpeg" alt="Butter Naan">
+                    <span>
+    Butter Naan
+    <small class="desc">Soft tandoor naan brushed with fresh butter.</small>
+</span>
+                </div>
+                <span>₹40</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="vegbiryani.jpeg" alt="Veg Biryani">
+                    <span>
+    Veg Biryani
+    <small class="desc">Aromatic basmati rice cooked with vegetables and spices.</small>
+</span>
+                </div>
+                <span>₹150</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="Soup.jpeg" alt="Soup">
+                    <span>
+    Soup
+    <small class="desc">Hot and comforting vegetable soup.</small>
+</span>
+                </div>
+                <span>₹70</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="Salad.jpeg" alt="Salad">
+                    <span>
+    Salad
+    <small class="desc">Fresh seasonal vegetables with light seasoning.</small>
+</span>
+                </div>
+                <span>₹60</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="gobimanchurian.jpeg" alt="Gobi Manchurian">
+                    <span>
+    Gobi Manchurian
+    <small class="desc">Crispy cauliflower tossed in spicy sauce.</small>
+</span>
+                </div>
+                <span>₹130</span>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="jeerarice.jpeg" alt="Jeera Rice">
+                    <span>
+    Jeera Rice
+    <small class="desc">Fragrant basmati rice flavored with cumin.</small>
+</span>
+                </div>
+                <span>₹120</span>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+
+<!-- navigation buttons -->
+<div class="menu-buttons">
+    <a href="index.html">
+        <button>Back to Home</button>
+    </a>
+
+    <a href="booking.html">
+        <button>Book a Reservation</button>
+    </a>
+</div>
+
+</body>
+</html>

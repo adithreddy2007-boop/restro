@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking</title>
+
+<link rel="stylesheet" href="style.css ">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<script>
+function validatePhone(input){
+    input.value = input.value.replace(/[^0-9]/g,'');
+    if(input.value.length > 10){
+        input.value = input.value.slice(0,10);
+    }
+}
+
+function submitForm(){
+
+    var phone = document.getElementById("phone").value;
+
+    if(phone.length != 10){
+        alert("Phone must be 10 digits");
+        return false;
+    }
+
+    window.location = "confirm.html";
+    return false;
+}
+</script>
+</head>
+
+<body>
+
+<div class="booking-box">
+
+    <h2>Reserve Your Table</h2>
+
+    <form onsubmit="return submitForm()">
+
+        <input type="text" placeholder="Name" required>
+
+        <input id="phone" type="text"
+               oninput="validatePhone(this)"
+               placeholder="Phone Number" required>
+
+        <input type="number" placeholder="Guests" required>
+
+        <input type="date" required>
+
+        <input type="time" required>
+
+        <button type="submit">Confirm Booking</button>
+
+    </form>
+
+    <a class="back-home" href="index.html">← Back to Home</a>
+
+</div>
+
+</body>
+</html>

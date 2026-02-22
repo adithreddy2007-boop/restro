@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reservation Confirmed</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#e6f4ea,#d4efe1);
+    font-family:Georgia, serif;
+}
+
+.confirm-box{
+    background:white;
+    padding:50px 60px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    animation:pop 0.6s ease;
+    max-width:420px;
+}
+
+.icon{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+h1{
+    margin:10px 0;
+    color:#1f4d3a;
+    font-size:34px;
+}
+
+p{
+    color:#555;
+    font-size:17px;
+    margin-bottom:30px;
+    line-height:1.5;
+}
+
+a{
+    display:inline-block;
+    padding:12px 28px;
+    background:linear-gradient(135deg,#1f4d3a,#2f7b5b);
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+a:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+@keyframes pop{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="confirm-box">
+
+    <div class="icon">✅</div>
+
+    <h1>Reservation Confirmed</h1>
+
+    <p>
+        Your table has been successfully booked.<br>
+        We look forward to serving you a delicious meal!
+    </p>
+
+    <a href="index.html">Return Home</a>
+
+</div>
+
+</body>
+</html>

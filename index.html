@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fooday Restaurant</title>
+
+<!-- Google Font (same stylish font) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+}
+
+/* TOP BAR */
+.topbar{
+    background:#e55b2d;
+    color:white;
+    padding:8px;
+    font-size:14px;
+    display:flex;
+    justify-content:space-around;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:40px;   /* because you already have topbar */
+    left:0;/* align to left */
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    color:white;
+    z-index:1000;/* to stay on top of hero section */
+}
+
+/* LOGO */
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* NAV LINKS */
+.navlinks a{
+    margin:0 15px;
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+
+    /* BACKGROUND IMAGE */
+    background:url("bg.jpeg") center/cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+/* DARK OVERLAY */
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+/* HERO CONTENT */
+.heroContent{
+    position:relative;
+    z-index:1;
+}
+
+/* MAIN TITLE */
+.heroContent h1{
+    font-family:'Playfair Display', serif;
+    font-size:70px;
+    margin:10px;
+}
+
+/* SUB TEXT */
+.heroContent p{
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+/* LINE DESIGN */
+.line{
+    width:200px;
+    height:2px;
+    background:white;
+    margin:20px auto;
+}
+
+/* ANIMATION */
+.heroContent{
+    animation:fadeIn 4s ease-in;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+<span>📍 Yelhanka </span>
+<span>📞 +91 98374 83947</span>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<div class="logo">FOODAY</div>
+
+<div class="navlinks">
+
+<a href="index.html">HOME</a>
+
+<a href="about1.html">ABOUT</a>
+
+<a href="menu.html">MENU</a>
+
+<a href="booking.html">RESERVATION</a>
+
+<a href="contact.html">CONTACT</a>
+
+</div>
+
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+
+<div class="heroContent">
+
+<div class="line"></div>
+
+<h1>FOODAY RESTAURANT</h1>
+
+<p>Tasty • Delicious • Savoury</p>
+
+<div class="line"></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

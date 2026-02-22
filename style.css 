@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+
+    background:
+        linear-gradient(rgba(54, 54, 53, 0.45), rgba(0,0,0,0.45)),
+        url("image/bg3.jpeg") center/cover no-repeat;
+
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* card */
+.booking-box{
+    background:#6B4F3A;
+    padding:40px 35px;
+    border-radius:18px;
+    width:340px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+.booking-box h2{
+    font-family:'Playfair Display', serif;
+    margin-bottom:20px;
+    color:#E6D2A8;
+}
+
+/* input fields */
+.booking-box input{
+    background-color:#FAF8F6;
+    color:#3E2C22;
+    border:1px solid #D6C8BC;
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    font-size:15px;
+    transform: translateX(-10px);
+}
+
+.booking-box input:focus{
+    outline:none;
+    border-color:#1f4d3a;
+}
+
+.booking-box button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#1f4d3a;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.booking-box button:hover{
+    background:#173B2D;
+}
+
+.back-home{
+    display:inline-block;
+    margin-top:18px;
+    text-decoration:none;
+    font-weight:600;
+    color:#E6D2A8;
+}
+/* dish description text */
+.desc{
+    display:block;
+    font-size:14px;
+    font-weight:400;
+    color:#6b6b6b;
+    margin-top:3px;
+}
+.left span{
+    display:flex;
+    flex-direction:column;
+}

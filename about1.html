@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#efe6dc;
+}
+
+/* hero */
+.about-hero{
+    height:40vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+        url("image/bg.jpeg") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+.about-hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin:0;
+}
+
+/* main card */
+.about-box{
+    max-width:700px;
+    margin:-60px auto 40px auto;
+    background:white;
+    padding:35px 30px;
+    border-radius:18px;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+.about-box p{/* description */
+    font-size:17px;
+    line-height:1.8;
+    color:#444;
+    <div class="button-group">
+    <a href="booking.html" class="btn">Book a Table</a>
+    <a href="index.html" class="btn">← Back to Home</a>
+</div>
+}
+
+/* small features */
+.features{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.feature{
+    background:#f3f7f5;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:600;
+    color:#1f4d3a;
+}
+
+/* button */
+.about-box a, .button-group .btn {
+    /* shared button styles */
+    display:inline-block;
+    margin:10px 5px 0;
+    padding:16px 30px;
+    font-size:18px;
+    background:#1f4d3a;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.about-box a:hover, .button-group .btn:hover{
+    background:#4c8d74;
+}
+
+/* group wrapper for centering multiple buttons */
+.button-group{
+    margin-top:30px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="about-hero">
+    <h1>About Our Restaurant</h1>
+</div>
+
+<div class="about-box">
+
+    <p>
+        We serve delicious food with love and quality ingredients.
+        Our focus is on fresh, hygienic and home-style vegetarian meals
+        that make you feel happy and satisfied every time you visit us.
+    </p>
+
+    <div class="features">
+        <div class="feature">🌱 Fresh food</div>
+        <div class="feature">🍽️ Hygienic kitchen</div>
+        <div class="feature">😊 Friendly service</div>
+    </div>
+
+    <!-- button group: centered and larger -->
+    <div class="button-group">
+        <!-- Book a Table button removed -->
+        <a href="index.html" class="btn">← Back to Home</a>
+    </div>
+
+</div>
+
+</body>
+</html>
